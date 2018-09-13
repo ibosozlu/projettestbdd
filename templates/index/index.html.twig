@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="example-wrapper">
+    News
+        <div class="container">
+            <div class="row">
+                <div class="col-sm news">
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[0].id }}">{{ news[0].title }}</a></td><br>
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[0].id }}"><img src="{{ asset("event/#{news[0].id}.png") }}" height=300 width=800></a></td><br>
+                    <td>{{ news[0].text }}</td>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm news">
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[1].id }}">{{ news[1].title }}</a></td><br>
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[1].id }}"><img src="{{ asset("event/#{news[1].id}.png") }}" height=300 width=800></a></td><br>
+                    <td>{{ news[1].text }}</td>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm news">
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[2].id }}">{{ news[2].title }}</a></td><br>
+                    <td><a href="http://127.0.0.1:8000/news/{{ news[2].id }}"><img src="{{ asset("event/#{news[2].id}.png") }}" height=300 width=800></a></td><br>
+                    <td>{{ news[2].text }}</td>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

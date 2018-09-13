@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table">
+        <ul>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>PV</th>
+            </tr>
+            {% for personnage in personnage %}
+                <tr>
+                    <td><a href="http://127.0.0.1:8000/personnage/{{ personnage.nom }}/{{ personnage.id }}">{{ personnage.id }}</a></td>
+                    <td><a href="http://127.0.0.1:8000/personnage/{{ personnage.nom }}/{{ personnage.id }}">{{ personnage.nom }}</a></td>
+                    <td> {{ personnage.pv }}</td>
+                    <td><img src="{{ asset("image/#{personnage.nom}.png")}}" height=150 width=150 ></td>
+                </tr>
+            {% endfor %}
+        </ul>
+    </table>
+{% endblock %}
+

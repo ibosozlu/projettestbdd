@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table">
+        <ul>
+            <tr>
+                <td><img src="{{ asset("image/#{perso[0].nom}.png") }}" height=150 width=150></td>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Cout</th>
+                <th>Base HP</th>
+                <th>HP max</th>
+                <th>Base ATK</th>
+                <th>ATK max</th>
+
+            </tr>
+            <tr>
+                <td>{{ perso[0].id }}</td>
+                <td>{{ perso[0].nom }}</td>
+                <td>{{ perso[0].cost }}</td>
+                <td>{{ perso[0].basepv }}</td>
+                <td>{{ perso[0].pv }}</td>
+                <td>{{ perso[0].baseatk }}</td>
+                <td>{{ perso[0].atk }}</td>
+            </tr>
+
+            {% for skill in skill %}
+                <tr>
+                    <td>Skill :</td>
+                </tr>
+                <tr>
+                    <td> {{ skill.nom }}</td>
+                    <td>  {{ skill.target }}</td>
+                    <td>   {{ skill.cd }}</td>
+                    <td>   {{ skill.description }}</td>
+                    <td>   {{ skill.lvl1 }}</td>
+                    <td>   {{ skill.lvl2 }}</td>
+                    <td>   {{ skill.lvl3 }}</td>
+                    <td>    {{ skill.lvl4 }}</td>
+                    <td>    {{ skill.lvl5 }}</td>
+                    <td>    {{ skill.lvl6 }}</td>
+                    <td>    {{ skill.lvl7 }}</td>
+                    <td>    {{ skill.lvl8 }}</td>
+                    <td>   {{ skill.lvl9 }}</td>
+                    <td>    {{ skill.lvl10 }}</td>
+                </tr>
+            {% endfor %}
+
+        </ul>
+    </table>
+{% endblock %}
