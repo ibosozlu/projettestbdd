@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table">
+        <ul>
+            <tr class="colorblue">
+                <th class="contour">Image</th>
+                <th class="contour mintaille">Japanese</th>
+                <th class="contour mintaille">English</th>
+            </tr>
+            <tr>
+                <td class="contour"><img src="{{ craftessence[0].imagefull }}" height=375 width=220></td>
+                <td class="contour">{{ craftessence[0].japanese }}</td>
+                <td class="contour">{{ craftessence[0].english }}</td>
+
+            </tr>
+        </ul>
+    </table>
+
+    <table class="table">
+        <ul>
+            <tr class="colorblue">
+                <th class="contour">ID</th>
+                <th class="contour">Nom</th>
+                <th class="contour">Cost</th>
+                <th class="contour">Base PV</th>
+                <th class="contour">Base ATK</th>
+                <th class="contour">Max HP</th>
+                <th class="contour">Max ATK</th>
+                <th class="contour">Icone</th>
+                <th class="contour">Description</th>
+            </tr>
+            <tr>
+                <td class="contour">{{ craftessence[0].id }}</td>
+                <td class="contour">{{ craftessence[0].name }}</td>
+                <td class="contour">{{ craftessence[0].cost }}</td>
+                <td class="contour">{{ craftessence[0].basehp }}</td>
+                <td class="contour">{{ craftessence[0].baseatk }}</td>
+                <td class="contour">{{ craftessence[0].hp }}</td>
+                <td class="contour">{{ craftessence[0].atk }}</td>
+                <td class="contour"><img src="{{ craftessence[0].icon }}" height=75 width=75></td>
+                <td class="contour">{{ craftessence[0].description }}</td>
+
+            </tr>
+        </ul>
+    </table>
+{% endblock %}

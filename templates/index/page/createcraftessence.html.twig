@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="form-area contenu">
+            <h3><i>Ajout de craft essence</i></h3>
+            <br>
+            <form>
+                <div class="form-group contact">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nom de la craft essence">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Cost</label>
+                    <input type="text" class="form-control" id="cost" name="cost"
+                           placeholder="Cost de la craft essence">
+                </div>
+
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Point de vie de base</label>
+                    <input type="text" class="form-control" id="basehp" name="basehp"
+                           placeholder="HP niveau 1">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Attaque de base</label>
+                    <input type="text" class="form-control" id="baseatk" name="baseatk"
+                           placeholder="ATK niveau 1">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputEmail1">Max point de vie</label>
+                    <input type="text" class="form-control" id="hp" name="hp" placeholder="HP max">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Max attaque</label>
+                    <input type="text" class="form-control" id="atk" name="atk"
+                           placeholder="ATK max">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Icone</label>
+                    <input type="text" class="form-control" id="icon" name="icon"
+                           placeholder="Icone de la craft essence">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Image</label>
+                    <input type="text" class="form-control" id="imagename" name="imagename"
+                           placeholder="Image de la craft essence">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Description</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                           placeholder="Dimension de l'image">
+                </div>
+
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Limit break</label>
+                    <input type="text" class="form-control" id="lb" name="lb"
+                           placeholder="Limit break">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Imagefull</label>
+                    <input type="text" class="form-control" id="imagefull" name="imagefull"
+                           placeholder="Image en entier">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Texte en japonais</label>
+                    <input type="text" class="form-control" id="japanese" name="japanese"
+                           placeholder="Texte en japonais">
+                </div>
+
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Texte en anglais</label>
+                    <input type="text" class="form-control" id="english" name="english"
+                           placeholder="Texte en anglais">
+                </div>
+
+
+                <br><br>
+                <div class="form-btn-group text-center">
+                    <button type="submit" class="btn button-color">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

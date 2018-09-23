@@ -1,14 +1,117 @@
+body{
+    max-width: 1920px;
+}
+
 .menu{
     border : 1px solid;
+    padding: 2% 2%;
+}
+.logo{
+    transition: transform .2s;
+}
+.logo:hover img{
+
 }
 
-body{
-    max-width: 1500px;
+.marge{
+    padding: 0 5% 5%;
 }
+.menu2{
+    padding: 2%;
+
+}
+.espace{
+    text-align: center;
+    padding : 5% !important;
+    border: 1px solid;
+}
+a{
+    color: black !important;
+}
+
+.espace:hover{
+    background-image: linear-gradient(to right, cornflowerblue , lightblue);
+}
+
+
+
+.menu3{
+    background-color:yellow;
+}
+
+
+.test1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.test3{
+    background-color: #f2f2f2;
+}
+
+.menu{
+    padding: auto;
+}
+.testlarge{
+    margin: 3%;
+}
+
+
+
 
 .news{
-    border: 1px solid black;
-    padding : 10px;
-    margin : 10px 0;
+    border: 1px solid;
+    padding : 2% 5% 2% 5%;
+    margin : 2%;
+    box-shadow: 3px 3px black;
+    min-width: 900px;
 }
 
+
+
+
+.design{
+    padding: 0px;
+
+}
+
+.colorblue{
+    background-image: linear-gradient(to right, cornflowerblue , lightblue);
+}
+
+.contour{
+    border : 1px solid !important;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.contenu{
+    border: 1px solid;
+    padding: 5% 10%;
+    box-shadow: 3px 3px black;
+    font-size: 20px;
+}
+
+.bloc2{
+    padding: 10% 1%;
+    background-image: linear-gradient(to right, cadetblue , lightblue);
+}
+
+.footer1{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.mintaille{
+    min-width: 300px;
+}
+
+.taillemax{
+    max-width: 100%;
+}

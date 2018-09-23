@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table design">
+        <tr class="colorblue">
+
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage">All</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Saber</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Archer</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Lancer</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Assassin</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Caster</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Rider</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Berserker</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Ruler</a></td>
+            <td class="contour"><a href="http://127.0.0.1:8000/personnage/class">Avenger</a></td>
+
+        </tr>
+    </table>
+    <table class="table design">
+        <tr class="colorblue">
+            <th class="contour">ID</th>
+            <th class="contour">Nom</th>
+            <th class="contour">Class</th>
+            <th class="contour">Sprite</th>
+            <th class="contour">Base PV</th>
+            <th class="contour">Base ATK</th>
+            <th class="contour">Max HP</th>
+            <th class="contour">Max ATK</th>
+            <th class="contour">Cost</th>
+            <th class="contour">NP</th>
+        </tr>
+        {% for personnage in personnage %}
+            <tr>
+                <td class="contour"><a href="http://127.0.0.1:8000/personnage/{{ personnage.nom }}/{{ personnage.id }}">{{ personnage.id }}</a></td>
+                <td class="contour"><a href="http://127.0.0.1:8000/personnage/{{ personnage.nom }}/{{ personnage.id }}">{{ personnage.nom }}</a></td>
+                <td class="contour">{{ personnage.class }}</td>
+                <td class="contour"><img src="{{ personnage.imagename }}" height=75 width=75 ></td>
+                <td class="contour">{{ personnage.basepv }}</td>
+                <td class="contour">{{ personnage.baseatk }}</td>
+                <td class="contour">{{ personnage.pv }}</td>
+                <td class="contour">{{ personnage.atk }}</td>
+                <td class="contour">{{ personnage.cost }}</td>
+                <td class="contour">{{ personnage.np }}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+

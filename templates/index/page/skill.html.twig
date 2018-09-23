@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <table class="table design">
+        <tr class="colorblue">
+            <th class="contour">ID</th>
+            <th class="contour">Nom</th>
+            <th class="contour">CD</th>
+            <th class="contour">Icon</th>
+            <th class="contour">Description</th>
+            <th class="contour">Lvl 1</th>
+            <th class="contour">Lvl 2</th>
+            <th class="contour">Lvl 3</th>
+            <th class="contour">Lvl 4</th>
+            <th class="contour">Lvl 5</th>
+            <th class="contour">Lvl 6</th>
+            <th class="contour">Lvl 7</th>
+            <th class="contour">Lvl 8</th>
+            <th class="contour">Lvl 9</th>
+            <th class="contour">Lvl 10</th>
+        </tr>
+        {% for skill in skill %}
+            <tr>
+                <td class="contour">{{ skill.id }}</td>
+                <td class="contour">{{skill.nom }}</td>
+                <td class="contour">{{ skill.cd }}</td>
+                <td class="contour"><img src="{{ skill.imagename }}" height=75 width=75 ></td>
+                <td class="contour">{{ skill.description }}</td>
+                <td class="contour">{{ skill.lvl1 }}</td>
+                <td class="contour">{{ skill.lvl2 }}</td>
+                <td class="contour">{{skill.lvl3 }}</td>
+                <td class="contour">{{ skill.lvl4 }}</td>
+                <td class="contour">{{ skill.lvl5 }}</td>
+                <td class="contour">{{skill.lvl6 }}</td>
+                <td class="contour">{{ skill.lvl7 }}</td>
+                <td class="contour">{{ skill.lvl8 }}</td>
+                <td class="contour">{{skill.lvl9 }}</td>
+                <td class="contour">{{ skill.lvl10 }}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+

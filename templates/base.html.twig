@@ -10,50 +10,59 @@
               crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/connexion.css') }}">
         <link rel="stylesheet" href="{{ asset('css/inscription.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     {% endblock %}
 </head>
-
-
 <body>
 
-
-<div class="container">
-    <div class="row">
-        <img src="{{ asset("image/banniere.png") }}" alt="Smiley face" height="350" width="1200">
+<div class="test1">
+    <div class="row logo">
+        <img src="{{ "https://i.imgur.com/nJPCUGS.png" }}"
+             alt="Smiley face" height="250" width="100%">
     </div>
-    <div class="row">
-        <div class="col-lg-2 menu">
-            <ul>
-                <li>
-                    <tr>
-                        <td><a href="http://127.0.0.1:8000/index">Accueil</a></td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td><td><a href="http://127.0.0.1:8000/personnage">Personnage</a></td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>C</td>
-                    </tr>
-                </li>
-                <li>
-                    <tr>
-                        <td>D</td>
-                    </tr>
-                </li>
 
-            </ul>
+    <div class="row">
+        <div class="col-lg-2 menu test3">
+            <div class="marge">
+                <div class="bloc">
+                    <div class="espace bloc2"> Event :</div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/index">Derniers events</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/allevent">Events</a></div>
+                    <br>
+                </div>
+
+                <div class="bloc">
+                    <div class="espace bloc2"> Guide :</div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/personnage">Personnages</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/craftessence">Craft Essences</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/mysticcode">Mystic Code</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/skill">Skills</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/skillmysticcode">Skill mystic code</a></div>
+                    <br>
+                </div>
+
+                <div class="bloc">
+                    <div class="espace bloc2"> Ajout :</div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/personnage/ajoutperso">Ajout Personnage</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/personnage/ajoutevent">Ajout event</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/personnage/ajoutskill">Ajout skill</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/createcraftessence">Ajout craft essence</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/ajoutmysticcode">Ajout mystic code</a></div>
+                    <div class="espace"><a href="http://127.0.0.1:8000/ajoutskillmysticcode">Ajout skill mystic code</a></div>
+                    <br>
+                </div>
+
+            </div>
         </div>
-        <div class="col-lg-10 menu">
+
+        <div class="col-lg-10 menu menu2">
             {% block body %}
 
             {% endblock %}
         </div>
     </div>
 </div>
+
 
 
 {% block javascripts %}
@@ -73,6 +82,6 @@
 </body>
 
 <footer>
-    <p>Wiki databasetest</p>
+    <p class="footer1">Fate/Grand Order © TYPE-MOON / FGO PROJECT | WikiTest | All logos and trademarks are property of their respective owners.</p>
 </footer>
 </html>

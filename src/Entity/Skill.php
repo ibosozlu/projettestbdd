@@ -72,24 +72,6 @@ class Skill
     private $lvl7;
 
     /**
-     * @return mixed
-     */
-    public function getLvl7()
-    {
-        return $this->lvl7;
-    }
-
-    /**
-     * @param mixed $lvl7
-     * @return Skill
-     */
-    public function setLvl7($lvl7)
-    {
-        $this->lvl7 = $lvl7;
-        return $this;
-    }
-
-    /**
      * @ORM\Column(type="string")
      */
     private $lvl8;
@@ -130,8 +112,30 @@ class Skill
 
 
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     *
+     * @var string
+     */
+    private $imageName;
 
+    /**
+     * @return string
+     */
+    public function getImageName(): string
+    {
+        return $this->imageName;
+    }
 
+    /**
+     * @param string $imageName
+     * @return Skill
+     */
+    public function setImageName(string $imageName): Skill
+    {
+        $this->imageName = $imageName;
+        return $this;
+    }
 
 
 
@@ -188,111 +192,183 @@ class Skill
         return $this;
     }
 
-    public function getLvl1(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl1()
     {
         return $this->lvl1;
     }
 
-    public function setLvl1(int $lvl1): self
+    /**
+     * @param mixed $lvl1
+     */
+    public function setLvl1($lvl1): void
     {
         $this->lvl1 = $lvl1;
-
-        return $this;
     }
 
-    public function getLvl2(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl2()
     {
         return $this->lvl2;
     }
 
-    public function setLvl2(int $lvl2): self
+    /**
+     * @param mixed $lvl2
+     * @return Skill
+     */
+    public function setLvl2($lvl2)
     {
         $this->lvl2 = $lvl2;
-
         return $this;
     }
 
-    public function getLvl3(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl3()
     {
         return $this->lvl3;
     }
 
-    public function setLvl3(int $lvl3): self
+    /**
+     * @param mixed $lvl3
+     * @return Skill
+     */
+    public function setLvl3($lvl3)
     {
         $this->lvl3 = $lvl3;
-
         return $this;
     }
 
-    public function getLvl4(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl4()
     {
         return $this->lvl4;
     }
 
-    public function setLvl4(int $lvl4): self
+    /**
+     * @param mixed $lvl4
+     * @return Skill
+     */
+    public function setLvl4($lvl4)
     {
         $this->lvl4 = $lvl4;
-
         return $this;
     }
 
-    public function getLvl5(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl5()
     {
         return $this->lvl5;
     }
 
-    public function setLvl5(int $lvl5): self
+    /**
+     * @param mixed $lvl5
+     * @return Skill
+     */
+    public function setLvl5($lvl5)
     {
         $this->lvl5 = $lvl5;
-
         return $this;
     }
 
-    public function getLvl6(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl6()
     {
         return $this->lvl6;
     }
 
-    public function setLvl6(int $lvl6): self
+    /**
+     * @param mixed $lvl6
+     * @return Skill
+     */
+    public function setLvl6($lvl6)
     {
         $this->lvl6 = $lvl6;
-
         return $this;
     }
 
-    public function getLvl8(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl7()
+    {
+        return $this->lvl7;
+    }
+
+    /**
+     * @param mixed $lvl7
+     * @return Skill
+     */
+    public function setLvl7($lvl7)
+    {
+        $this->lvl7 = $lvl7;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLvl8()
     {
         return $this->lvl8;
     }
 
-    public function setLvl8(int $lvl8): self
+    /**
+     * @param mixed $lvl8
+     * @return Skill
+     */
+    public function setLvl8($lvl8)
     {
         $this->lvl8 = $lvl8;
-
         return $this;
     }
 
-    public function getLvl9(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl9()
     {
         return $this->lvl9;
     }
 
-    public function setLvl9(int $lvl9): self
+    /**
+     * @param mixed $lvl9
+     * @return Skill
+     */
+    public function setLvl9($lvl9)
     {
         $this->lvl9 = $lvl9;
-
         return $this;
     }
 
-    public function getLvl10(): ?int
+    /**
+     * @return mixed
+     */
+    public function getLvl10()
     {
         return $this->lvl10;
     }
 
-    public function setLvl10(int $lvl10): self
+    /**
+     * @param mixed $lvl10
+     * @return Skill
+     */
+    public function setLvl10($lvl10)
     {
         $this->lvl10 = $lvl10;
-
         return $this;
     }
+
+
 }

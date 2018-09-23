@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <table class="table design">
+        <tr class="colorblue">
+            <th class="contour">ID</th>
+            <th class="contour">Nom</th>
+            <th class="contour">Cost</th>
+            <th class="contour">Image</th>
+            <th class="contour">Base PV</th>
+            <th class="contour">Base ATK</th>
+            <th class="contour">Max HP</th>
+            <th class="contour">Max ATK</th>
+            <th class="contour">Icone</th>
+            <th class="contour">Description</th>
+            <th class="contour">Limit break</th>
+        </tr>
+        {% for craftessence in craftessence %}
+            <tr>
+
+                <td class="contour"><a href="http://127.0.0.1:8000/craftessence/{{ craftessence.id }}">{{ craftessence.id }}</a></td>
+                <td class="contour"><a href="http://127.0.0.1:8000/craftessence/{{ craftessence.id }}">{{ craftessence.name }}</a></td>
+                <td class="contour">{{ craftessence.cost }}</td>
+                <td class="contour"><img src="{{ craftessence.imagename }}" height=75 width=75 ></td>
+                <td class="contour">{{ craftessence.basehp }}</td>
+                <td class="contour">{{ craftessence.baseatk }}</td>
+                <td class="contour">{{ craftessence.hp }}</td>
+                <td class="contour">{{ craftessence.atk }}</td>
+                <td class="contour"><img src="{{ craftessence.icon }}" height=75 width=75 ></td>
+                <td class="contour">{{ craftessence.description }}</td>
+                <td class="contour">{{ craftessence.lb }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+

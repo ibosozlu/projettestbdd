@@ -1,14 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <table class="table">
-        <ul>
-            <tr>
-                <td>{{ nouvelle[0].title }}</td>
-            </tr>
-            <tr>
-                <td>{{ nouvelle[0].text }}</td>
-            </tr>
-        </ul>
-    </table>
+
+
+        <div class="container">
+                <div class="row">
+                    <div class="news">
+                        <td>{{ nouvelle[0].title }}</td><br>
+                        <td><img src="{{ nouvelle[0].imagename }}"></td><br><br>
+                        <td>{{ nouvelle[0].text }}</td><br><br>
+                        <td> <iframe width="720" height="480" src="{{ nouvelle[0].trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+
+
+                    </div>
+                </div>
+        </div>
+
+
 {% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <table class="table design">
+        <tr class="colorblue">
+            <th class="contour">ID</th>
+            <th class="contour">Nom</th>
+            <th class="contour">Quest</th>
+            <th class="contour">Image</th>
+            <th class="contour">Description</th>
+
+        </tr>
+        {% for mysticcode in mysticcode %}
+            <tr>
+                <td class="contour"><a href="http://127.0.0.1:8000/mysticcode/{{ mysticcode.id }}">{{ mysticcode.id }}</a></td>
+                <td class="contour"><a href="http://127.0.0.1:8000/mysticcode/{{ mysticcode.id }}">{{  mysticcode.name }}</a></td>
+                <td class="contour">{{  mysticcode.quest }}</td>
+                <td class="contour"><img src="{{  mysticcode.imagename }}" height=75 width=75 ></td>
+                <td class="contour">{{  mysticcode.description }}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

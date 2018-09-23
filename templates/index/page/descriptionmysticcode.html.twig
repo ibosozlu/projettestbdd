@@ -5,47 +5,16 @@
     <table class="table">
         <ul>
             <tr class="colorblue">
-                <th class="contour">Ascension 1</th>
-                <th class="contour">Ascension 2</th>
-                <th class="contour">Ascension 3</th>
-                <th class="contour">Ascension 4</th>
-            </tr>
-            <tr>
-
-                <td class="contour"><img src="{{ perso[0].ascension1 }}" height=360 width=260></td>
-                <td class="contour"><img src="{{ perso[0].ascension2 }}" height=360 width=260></td>
-                <td class="contour"><img src="{{ perso[0].ascension3 }}" height=360 width=260></td>
-                <td class="contour"><img src="{{ perso[0].ascension4 }}" height=360 width=260></td>
-            </tr>
-        </ul>
-    </table>
-
-
-    <table class="table">
-        <ul>
-            <tr class="colorblue">
+                <th class="contour">Image</th>
                 <th class="contour">ID</th>
                 <th class="contour">Nom</th>
-                <th class="contour">Class</th>
-                <th class="contour">Sprite</th>
-                <th class="contour">Base PV</th>
-                <th class="contour">Base ATK</th>
-                <th class="contour">Max HP</th>
-                <th class="contour">Max ATK</th>
-                <th class="contour">Cost</th>
-                <th class="contour">NP</th>
+                <th class="contour">Quête</th>
             </tr>
             <tr>
-                <td class="contour">{{ perso[0].id }}</td>
-                <td class="contour">{{ perso[0].nom }}</td>
-                <td class="contour">{{ perso[0].class }}</td>
-                <td class="contour"><img src="{{ perso[0].imagename }}" height=75 width=75></td>
-                <td class="contour">{{ perso[0].basepv }}</td>
-                <td class="contour">{{ perso[0].baseatk }}</td>
-                <td class="contour">{{ perso[0].pv }}</td>
-                <td class="contour">{{ perso[0].atk }}</td>
-                <td class="contour">{{ perso[0].cost }}</td>
-                <td class="contour">{{ perso[0].np }}</td>
+                <td class="contour"><img src="{{ descriptionmysticcode[0].imagename }}" height=75 width=75></td>
+                <td class="contour">{{ descriptionmysticcode[0].id }}</td>
+                <td class="contour">{{ descriptionmysticcode[0].name }}</td>
+                <td class="contour">{{ descriptionmysticcode[0].quest }}</td>
             </tr>
         </ul>
     </table>
@@ -54,7 +23,7 @@
         <ul>
             <tr class="colorblue">
                 <th class="contour">Nom</th>
-                <th class="contour">Icone</th>
+                <th class="contour">Cible</th>
                 <th class="contour">CD</th>
                 <th class="contour">Description</th>
                 <th class="contour">Niveau 1</th>
@@ -89,4 +58,5 @@
 
         </ul>
     </table>
+
 {% endblock %}

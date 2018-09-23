@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+            <div class="form-area contenu">
+                <h3><i>Ajout d'event</i></h3>
+                <br>
+                <form>
+                    <div class="form-group contact">
+                        <label for="exampleInputEmail1">Nom de l'event</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Nom de l'event">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputEmail1">Description</label>
+                        <input type="text" class="form-control" id="text" name="text" placeholder="Description de l'event">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Image</label>
+                        <input type="text" class="form-control" id="imagename" name="imagename"
+                               placeholder="Image de l'event">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Taille de l'image</label>
+                        <input type="text" class="form-control" id="imagesize" name="imagesize"
+                               placeholder="Dimension de l'image">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Trailer</label>
+                        <input type="text" class="form-control" id="trailer" name="trailer"
+                               placeholder="Dimension de l'image">
+                    </div>
+
+                    <br><br>
+                    <div class="form-btn-group text-center">
+                        <button type="submit" class="btn button-color">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

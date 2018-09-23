@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="form-area contenu">
+            <h3><i>Ajout de personnage</i></h3>
+            <br>
+            <form>
+                <div class="form-group contact">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nom du personnage">
+                </div>
+
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Quête</label>
+                    <input type="text" class="form-control" id="quest" name="quest"
+                           placeholder="Type de NP">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Image</label>
+                    <input type="text" class="form-control" id="imagename" name="imagename"
+                           placeholder="Image du personnage">
+                </div>
+                <div class="form-group contact">
+                    <label for="exampleInputPassword1">Description</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                           placeholder="Dimension de l'image">
+                </div>
+
+                <br><br>
+                <div class="form-btn-group text-center">
+                    <button type="submit" class="btn button-color">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

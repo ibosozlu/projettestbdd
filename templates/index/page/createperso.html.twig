@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+
+            <div class="form-area contenu">
+                <h3><i>Ajout de personnage</i></h3>
+                <br>
+                <form>
+                    <div class="form-group contact">
+                        <label for="exampleInputEmail1">Nom</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nom du personnage">
+                    </div>
+
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Point de vie de base</label>
+                        <input type="text" class="form-control" id="basepv" name="basepv"
+                               placeholder="HP niveau 1">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Attaque de base</label>
+                        <input type="text" class="form-control" id="baseatk" name="baseatk"
+                               placeholder="ATK niveau 1">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputEmail1">Max point de vie</label>
+                        <input type="text" class="form-control" id="pv" name="pv" placeholder="HP max">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Max attaque</label>
+                        <input type="text" class="form-control" id="atk" name="atk"
+                               placeholder="ATK max">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Cost</label>
+                        <input type="text" class="form-control" id="cost" name="cost"
+                               placeholder="Cost du personnage">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Class</label>
+                        <input type="text" class="form-control" id="class" name="class"
+                               placeholder="Class du personnage">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Class ID</label>
+                        <input type="text" class="form-control" id="classid" name="classid"
+                               placeholder="Id de la classe">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">NP</label>
+                        <input type="text" class="form-control" id="np" name="np"
+                               placeholder="Type de NP">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Image</label>
+                        <input type="text" class="form-control" id="imagename" name="imagename"
+                               placeholder="Image du personnage">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Ascension 1</label>
+                        <input type="text" class="form-control" id="ascension1" name="ascension1"
+                               placeholder="Ascension 1">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Ascension 2</label>
+                        <input type="text" class="form-control" id="ascension2" name="ascension2"
+                               placeholder="Ascension 2">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Ascension 3</label>
+                        <input type="text" class="form-control" id="ascension3" name="ascension3"
+                               placeholder="Ascension 3">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Ascension 4</label>
+                        <input type="text" class="form-control" id="ascension4" name="ascension4"
+                               placeholder="Ascension 4">
+                    </div>
+                    <div class="form-group contact">
+                        <label for="exampleInputPassword1">Dimension image</label>
+                        <input type="text" class="form-control" id="imagesize" name="imagesize"
+                               placeholder="Dimension de l'image">
+                    </div>
+
+
+                    <br><br>
+                    <div class="form-btn-group text-center">
+                        <button type="submit" class="btn button-color">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
